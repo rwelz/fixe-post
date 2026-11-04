@@ -258,3 +258,30 @@ details.faq p { margin: 0 0 16px; }
 /* Briefmarke auf der Postkarten-Grafik (Produktseite) */
 .pc-art-stamp { position: absolute; right: -18px; top: -26px; width: 128px; height: auto; transform: rotate(7deg); filter: drop-shadow(0 3px 5px rgba(60, 40, 20, .2)); }
 @media (max-width: 760px) { .pc-art-stamp { width: 92px; right: -10px; top: -18px; } }
+
+/* DocQuery: Mac-Fenster mit Dokument und Chat (Produktseite) */
+.dq-art {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+  box-shadow: 0 2px 4px rgba(60,40,20,.06), 0 18px 40px rgba(60,40,20,.12); transform: rotate(-1.5deg);
+}
+.dq-art-bar { display: flex; gap: 7px; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+.dq-art-bar span { width: 11px; height: 11px; border-radius: 50%; background: var(--line); }
+.dq-art-body { display: grid; grid-template-columns: .8fr 1.2fr; gap: 18px; padding: 20px; }
+.dq-art-doc {
+  position: relative; display: flex; flex-direction: column; gap: 9px; padding: 26px 16px 16px;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 4px 16px 4px 4px;
+}
+.dq-art-doc i { display: block; height: 7px; border-radius: 4px; background: color-mix(in srgb, var(--accent) 22%, var(--line)); }
+.dq-art-doc i:nth-child(2n) { width: 82%; }
+.dq-art-doc i:nth-child(3n) { width: 64%; }
+.dq-art-doc i.hl { background: var(--accent); opacity: .75; }
+.dq-art-chat { display: flex; flex-direction: column; justify-content: center; gap: 10px; font-size: 14px; line-height: 1.4; }
+.dq-bubble { max-width: 92%; padding: 8px 12px; border-radius: 14px; }
+.dq-bubble--me { align-self: flex-end; background: var(--accent); color: var(--accent-ink); border-bottom-right-radius: 4px; }
+.dq-bubble--ai { align-self: flex-start; background: var(--accent-soft); border-bottom-left-radius: 4px; }
+.dq-bubble--ai strong { display: block; font-size: 12px; color: var(--accent); margin-bottom: 2px; }
+@media (max-width: 760px) {
+  .dq-art { transform: none; }
+  .dq-art-body { gap: 12px; padding: 14px; }
+  .dq-art-chat { font-size: 13px; }
+}

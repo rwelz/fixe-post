@@ -34,6 +34,20 @@ var FP = (function () {
       },
       platforms: { de: 'iPhone & iPad', en: 'iPhone & iPad' },
       appStoreUrl: ''                          // nach dem Release eintragen, z. B. 'https://apps.apple.com/app/id1234567890'
+    },
+    {
+      id: 'docquery',
+      name: 'DocQuery',
+      monogram: 'Dq',
+      icon: 'docquery/icon-128.png',
+      color: { light: '#1f5bd6', dark: '#6cb4ff' },
+      tagline: { de: 'Frag deine Dokumente', en: 'Your docs, answered' },
+      description: {
+        de: 'Zieh ein PDF, eine Textdatei oder ein Foto hinein – DocQuery fasst es zusammen und beantwortet deine Fragen, privat auf deinem Mac.',
+        en: 'Drop in a PDF, a text file or a photo – DocQuery summarizes it and answers your questions, privately on your Mac.'
+      },
+      platforms: { de: 'Mac', en: 'Mac' },
+      appStoreUrl: ''
     }
   ];
 

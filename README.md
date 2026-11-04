@@ -17,6 +17,7 @@ yours-truly/            Ein Ordner pro Produkt
   index.html            Produktseite      → Marketing-URL
   support.html          Support           → Support-URL
   datenschutz.html      Datenschutz       → Datenschutz-URL
+docquery/               DocQuery (Mac), gleicher Aufbau
 ```
 
 Texte stehen auf jeder Seite doppelt: `<… lang="de">` und `<… lang="en">`.
@@ -24,7 +25,7 @@ Texte stehen auf jeder Seite doppelt: `<… lang="de">` und `<… lang="en">`.
 ## Vor dem ersten Veröffentlichen
 
 Gelb markierte Platzhalter in eckigen Klammern ersetzen (Suche nach `class="ph"`):
-`impressum.html`, `datenschutz.html`, `yours-truly/datenschutz.html`.
+`impressum.html`, `datenschutz.html`, `yours-truly/datenschutz.html`, `docquery/datenschutz.html`.
 
 ## Neues Produkt hinzufügen
 
@@ -45,6 +46,12 @@ Nach dem App-Store-Release `appStoreUrl` in `site.js` eintragen – dann erschei
 - Marketing-URL: https://fixe-post.de/yours-truly/
 - Support-URL: https://fixe-post.de/yours-truly/support.html
 - Datenschutz-URL: https://fixe-post.de/yours-truly/datenschutz.html
+
+## App Store Connect (DocQuery)
+
+- Marketing-URL: https://fixe-post.de/docquery/
+- Support-URL: https://fixe-post.de/docquery/support.html
+- Datenschutz-URL: https://fixe-post.de/docquery/datenschutz.html
 
 ## Veröffentlichen mit Netlify
 
